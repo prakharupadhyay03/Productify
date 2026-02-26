@@ -41,9 +41,6 @@ app.use("/api/comments", commentRoutes);
 
 
 
-<<<<<<< HEAD
-app.listen(ENV.PORT, () => console.log("Server is up and running on PORT:", ENV.PORT));
-=======
 const port = ENV.PORT || 3000;
 
 if (process.env.NODE_ENV !== "production") {
@@ -53,4 +50,3 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 export default app;
->>>>>>> 4c9178f46ceee6de59963b5ef190df14ce3b6569
