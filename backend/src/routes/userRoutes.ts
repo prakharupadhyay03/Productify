@@ -4,7 +4,8 @@ import { requireAuth } from "@clerk/express";
 
 
 
-router.post("/sync", requireAuth(), async (req, res) => {
-  const { userId } = req.auth;
-  ...
-});
+const router = Router();
+
+router.post("/sync", requireAuth(), syncUser);
+
+export default router;
